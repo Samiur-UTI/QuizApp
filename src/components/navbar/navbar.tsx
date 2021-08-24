@@ -9,14 +9,14 @@ const Navbar : React.FC = () => {
             <Toolbar>
                 <div className="navbar-toolbar">
                     <Typography variant="h6">
-                        News
+                        Welcome !
                     </Typography>
                     <div className='login-register'>
                         <NavLink className='link' to='/login'>
-                            <CustomButton className='login-btn' color='inherit' text='login'/>
+                            <CustomButton variant='outlined' className='login-btn' color='inherit' text='login'/>
                         </NavLink>
                         <NavLink className='link' to='/register'>
-                            <CustomButton className='register-btn' color='inherit' text='register'/>
+                            <CustomButton variant='outlined' className='register-btn' color='inherit' text='register'/>
                         </NavLink>
                     </div>
                 </div>

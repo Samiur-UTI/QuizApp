@@ -1,0 +1,22 @@
+.jumbotron{
+    width: 70vw;
+    margin-top: 10%;
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        .jumbotron-title {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 900;
+            font-size: 48px;
+        }
+        .jumbotron-text{
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            margin: 24px 10px 20px 20px;
+        }    
+    }
+}

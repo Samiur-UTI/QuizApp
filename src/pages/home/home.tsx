@@ -1,10 +1,11 @@
 import React from 'react'
 import './home.scss';
-import Navbar from '../../components/navbar/navbar'
+import Jumbotron from '../../components/jumotron/jumbotron'
+import './home.scss';
 const Home: React.FC = () => {
     return (
-        <div>
-            <Navbar/>
+        <div className='homepage'>
+            <Jumbotron/>
         </div>
     )
 }

@@ -5,12 +5,15 @@ interface buttonProps {
     color:'primary'|'secondary'|'default'|'inherit';
     className: string;
     text: string;
+    variant: 'contained'|'outlined'|'text' ;
 }
 
-const CustomButton: React.FC<buttonProps> =({color,className,text}) => {
+const CustomButton: React.FC<buttonProps> =({color,className,text,variant}) => {
     return (
         <div className="custom-button">
-            <Button variant='outlined' color={color} className={className}>{text}</Button>
+            <Button variant={variant} color={color} className={className}>
+                <span className={className === 'btn-jumbotron' ? 'jumbo-btn-text': '' }>{text}</span>
+            </Button>
         </div>
     )
 }
