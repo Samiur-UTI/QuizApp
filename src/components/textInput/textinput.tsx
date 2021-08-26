@@ -31,8 +31,10 @@ const Textinput = ({name,type,variant,label}: Props) => {
         textFieldConfig.helperText = meta.error
     }
     return (
-        <TextField {...textFieldConfig} label={<>
+        <div className='form-field'>
+            <TextField {...textFieldConfig} label={<>
             <span className='text-label'>{label}</span></>}/>
+        </div>
     )
 }
 
